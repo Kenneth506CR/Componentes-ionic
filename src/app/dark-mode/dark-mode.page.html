@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      Dark Mode
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-toggle (ionChange)="toggleDarkMode()"></ion-toggle>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+  <ion-card class="carta">
+    <img alt="Silhouette of mountains" src="https://images.unsplash.com/photo-1503676382389-4809596d5290?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8dW5pdmVyc2lkYWR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60" />
+    <ion-card-header>
+      <ion-card-title>UNA</ion-card-title>
+      <ion-card-subtitle>Universidad Nacional de Costa Rica</ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+      Estudia en una de las universidades más pestigiosas de Costa Rica.
+    </ion-card-content>
+  </ion-card>
+</div>

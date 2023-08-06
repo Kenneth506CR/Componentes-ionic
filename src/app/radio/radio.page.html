@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      Radio
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+    <ion-radio-group [allowEmptySelection]="true" value="turtles">
+    <ion-radio value="dogs">Dogs</ion-radio><br />
+    <ion-radio value="cats">Cats</ion-radio><br />
+    <ion-radio value="turtles">Turtles</ion-radio><br />
+    <ion-radio value="fish">Fish</ion-radio><br />
+  </ion-radio-group>
+</div>

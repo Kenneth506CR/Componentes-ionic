@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      Date & Time Picker
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+  <ion-datetime #datetime>
+    <ion-buttons slot="buttons">
+      <ion-button color="danger" (click)="datetime.reset()">Reset</ion-button>
+      <ion-button color="primary" (click)="datetime.cancel()">Never mind</ion-button>
+      <ion-button color="primary" (click)="datetime.confirm()">All Set</ion-button>
+    </ion-buttons>
+  </ion-datetime>
+</div>

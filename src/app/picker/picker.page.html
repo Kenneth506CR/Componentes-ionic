@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      picker
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-button (click)="setOpen(true)">Open</ion-button>
+<ion-picker
+  [isOpen]="isPickerOpen"
+  [columns]="pickerColumns"
+  [buttons]="pickerButtons"
+  (didDismiss)="setOpen(false)"
+></ion-picker>

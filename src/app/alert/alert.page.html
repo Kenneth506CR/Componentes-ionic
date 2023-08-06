@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      Alert
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-button id="present-alert" class="delete-button">Borrar</ion-button>
+<ion-alert
+  trigger="present-alert"
+  header="Alerta"
+  subHeader="Aviso importante"
+  message="Estas eliminando la base de datos!"
+  [buttons]="alertButtons"
+></ion-alert>

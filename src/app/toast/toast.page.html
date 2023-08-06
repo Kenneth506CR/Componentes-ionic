@@ -1,0 +1,13 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      Toast
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-button id="open-toast">Open Toast</ion-button>
+<ion-toast trigger="open-toast" message="Hello World!" [duration]="3000" icon="globe"></ion-toast>
